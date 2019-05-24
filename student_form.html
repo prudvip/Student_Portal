@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <title>Let's Graduate</title>
+    </head>
+    <body>
+        <!-- <h1>Evaluation</h1> -->
+        <main>
+            <button class="btn" onclick="goToHomepage()"><i class="fa fa-home"></i></button>
+            <p>Let's get started, select your future!</p>
+            <form id="student-input">
+                <fieldset>
+                    <label for="student_name">Name:</label>
+                    <input id="student_name" name="student_name" type="text" size=40 required>
+                    <label for="rank">Entrance Test Rank:</label>
+                    <input id="rank" name="rank" type="number" size=10 pattern="[0-9]" required>
+                    <label for="areas">Area of Interest:</label>
+                    <select id = "areas" name = "areas">
+                        <option value="Aviation" required>Aviation</option>
+                        <option value="Architecture" required>Architecture</option>
+                        <option value="Civil" required>Civil</option>
+                        <option value="Computers" required>Computers</option>
+                        <option value="Electrical" required>Electrical</option>
+                        <option value="Electronics" required>Electronics</option>
+                        <option value="Information Technology (IT)" required>Software</option>
+                    </select>
+                    <button id="submit" type="submit">Hit it</button>
+                    <button id="reset" type="reset">Reset</button>
+                </fieldset>
+            </form>
+
+            <section>
+                    <p id="list_header"></p>
+                <table>
+                    <thead id="header"></thead>
+                    <tbody id="student_table">
+                        <!-- dynamic data will be inserted here -->
+                    </tbody>
+                </table>
+            </section>
+        </main>
+        <script src="js/student_form.js"></script>
+    </body>
+</html>
